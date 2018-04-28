@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<!-- doctype need to be caps? support any more cases that way? what is
+    convention now? -->
+<html>
+<!-- maybe just host(name?ip?)? type of data? -->
+<title>Hong Lab via {host}</title>
+
+<body>
+  <!-- p tag required? how to make a list of links on index in flask? -->
+  <ul>
+  {% for link in links %}
+    <li><a href="{{link.url}}">{{ link.name }}</a></li>
+  {% endfor %}
+  </ul>
+</body>
+
+</html>
