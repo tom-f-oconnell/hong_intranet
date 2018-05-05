@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+  <title>{{ short_description }} </title>
+
+  <body>
+    <header>
+      {{ short_description }}
+    </header>
+    <ul>
+    {% for replicate in replicates %}
+      <!-- p tag required? how to make a list of links on index in flask? -->
+      <li><a href="{{link.url}}">{{ link.name }}</a></li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
